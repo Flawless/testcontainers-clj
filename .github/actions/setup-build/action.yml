@@ -13,6 +13,10 @@ runs:
         path: ~/.m2/repository
         key: ${{ runner.os }}-lein-${{ hashFiles('**/project.clj') }}
         restore-keys: ${{ runner.os }}-lein-
+    - name: Install clojure tools
+      uses: DeLaGuardo/setup-clojure@13.1
+      with:
+        lein: 2.11.2
     - name: Clear existing docker image cache
       shell: bash
       run: docker image prune -af
