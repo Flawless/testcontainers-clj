@@ -6,8 +6,8 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :dependencies [[org.clojure/clojure "1.10.3"]
-                 [org.testcontainers/testcontainers "1.19.7"]]
+  :dependencies [[org.clojure/clojure "1.12.0"]
+                 [org.testcontainers/testcontainers "1.20.4"]]
 
   :aliases {"test" ["run" "-m" "kaocha.runner"]
             "cljstyle" ["run" "-m" "cljstyle.main"]}
@@ -22,7 +22,7 @@
                                   [org.clojure/test.check "1.1.1"]
                                   [orchestra "2021.01.01-1"]
                                   [org.clojure/tools.namespace "1.5.0"]
-                                  [org.testcontainers/postgresql "1.19.7"]
+                                  [org.testcontainers/postgresql "1.20.4"]
                                   [com.fzakaria/slf4j-timbre "0.4.1"]
                                   [nrepl "1.0.0"]]
                    :source-paths ["dev-src"]}
